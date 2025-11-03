@@ -1,0 +1,21 @@
+# venv
+.venv/
+venv/
+
+# python cache
+__pycache__/
+*.pyc
+
+# local data stores / indexes
+rag_vanilla/store/
+rag_vanilla/.chroma/
+chroma/
+index/
+.tmp/
+
+# OS & editor junk
+.DS_Store
+Thumbs.db
+
+# env
+.env

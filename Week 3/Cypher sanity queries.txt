@@ -1,0 +1,17 @@
+// All Fall 2025 events
+MATCH (e:Event {term: 'Fall 2025'})
+RETURN e.event, e.date
+ORDER BY e.event
+
+
+// Spring 2026 “Classes Begin”
+MATCH (e:Event)
+WHERE e.term = 'Spring 2026' AND e.event CONTAINS 'Classes Begin'
+RETURN e.event, e.date
+
+
+// Keyword search (case-insensitive)
+MATCH (e:Event)
+WHERE toLower(e.event) CONTAINS 'final'
+RETURN e.term, e.event, e.date
+ORDER BY e.term

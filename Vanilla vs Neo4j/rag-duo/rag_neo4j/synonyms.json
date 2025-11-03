@@ -1,0 +1,17 @@
+{
+  "anchors": {
+    "classes begin": "Classes Begin",
+    "first day of classes": "Classes Begin",
+    "classes start": "Classes Begin",
+    "instruction begins": "Classes Begin",
+    "classes end": "Classes End",
+    "end of classes": "Classes End",
+    "last day of classes": "Classes End",
+    "fall break": "Fall Break- No Classes",
+    "labor day": "Holiday: Labor Day - No Classes",
+    "reading day": "Reading Day",
+    "final exams": "Final Exams",
+    "withdrawal deadline": "Withdrawal Deadline",
+    "add/drop ends": "Add/Drop Ends"
+  }
+}

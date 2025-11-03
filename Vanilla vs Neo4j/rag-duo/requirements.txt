@@ -1,0 +1,11 @@
+chromadb
+numpy
+tqdm
+python-dotenv
+requests
+neo4j
+pydantic
+fastapi[standard]
+uvicorn
+python-dateutil
+sentence-transformers

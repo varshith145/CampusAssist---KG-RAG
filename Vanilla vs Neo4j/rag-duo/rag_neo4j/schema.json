@@ -1,0 +1,19 @@
+{
+  "nodes": {
+    "Term": { "properties": ["name"] },
+    "Event": { "properties": ["name", "start_date", "end_date", "start_weekday", "end_weekday", "source"] }
+  },
+  "relationships": [
+    { "from": "Term", "type": "HAS_EVENT", "to": "Event" }
+  ],
+  "rules": {
+    "dates": "start_date/end_date are ISO dates (YYYY-MM-DD)",
+    "weekdays": "start_weekday/end_weekday are Monday..Sunday"
+  },
+  "allow_filters": [
+    "after_anchor", "before_anchor", "weekday_in", "month_eq", "date_window",
+    "same_day_pairs", "overlap_pairs", "anchor_exact"
+  ],
+  "allow_group_by": ["iso_year", "iso_week"],
+  "allow_order_by": ["start_date", "end_date", "name"]
+}
